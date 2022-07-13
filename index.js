@@ -33,7 +33,7 @@ app.post("/api/shorturl", function (req, res) {
         res.json({ original_url: data.url, short_url: data.id })
       );
     } else {
-      res.json({ staus: "invalid" });
+      res.json({ error: "invalid url" });
     }
   });
 });
